@@ -29,7 +29,9 @@ public class Main {
                 scanner.nextLine();
             }
             else if (task.equals("3")) {
-                list.remove(0);
+                    System.out.println("Какую задачу вы хотите удалить\n" + list);
+                    Integer indexInput = Integer.valueOf(scanner.nextLine());
+                    list.remove(indexInput);
             }
             else if ("0".equals(task))
                 break;
